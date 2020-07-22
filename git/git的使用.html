@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+        git的使用
+          + 安装完成后进行一个全局的配置
+          +配置一下自己的邮箱和用户名
+            直接打开命令行或 git base here
+             + $ git config --list :查看当前的配置目录
+             + $ git config --global user.name '你的用户名' :修改用户名
+             + $ git config --global user.email '邮箱': 修改邮箱
+        
+
+        git管理文件
+          +git 不会随便改变你的文件 我们需要告诉他这个文件需要 'GIT' 管理 他才会管理这个文件
+
+          +$ git init :git初始化命令 他会告诉 git 这个文件下的所有子目录都被 git 管理 
+
+          + 当一个文件夹被 git 管理以后 我们就可以使用 git 命令操作 文件了
+
+        git的常用指令
+
+          + 当一个文件被git管理以后会生成三个区域
+            
+            + 开发区域
+
+            + 暂时存储区
+
+            + 历史区 : 生成历史版本的地方
+
+          + 想生成一个历史版本
+            + 只能把暂存区的内容生成历史版本
+          + 想上传到github 只能上传历史区的内容
+
+          + $ git status :查看当前文件夹的所有文件的状态
+
+          + $ git log :查看历史区的所有版本
+             commit :当前版本的 id
+             commit 4259119aba4c7dfd3ebee4331b187bc30090b09e (HEAD -> master)
+             Author:操作者
+             Author: guoOO <211295621@qq.com>
+             Date:操作时间
+             Date:   Thu Jul 23 07:01:59 2020 +0800
+
+
+
+          +把文件放在暂存区保存
+            +操作指令 $ git add 'xxx'
+              +$ git add '文件名' ;把文件添加到暂存区
+
+              +$ git add '文件夹名加/' :把文件夹添加到暂存区
+
+              + $ git add --all :把当前文件夹下所有文件添加到暂存区
+
+              + $ git add . :把当前文件夹下所有文件添加到暂存区
+
+          + 把暂存取得内容拉回到开发区
+             + 使用指令 $ git reset HEAD -- xxx
+
+             + $ git reset HEAD -- '文件名' :把一个文件拉回到开发区
+
+             + $ git reset HEAD -- '文件夹加/' :把一个文件夹拉回到开发区
+
+             +$ git reset HEAD -- . :拉回所有内容
+
+
+          + 把暂存区的内容生成一个历史版本
+
+             + $ git commit -m "版本描述信息" : 这个指令会把暂存区里的所有内容生成一个历史版本放到历史区进行保留
+               
+
+        */
+    </script>
+</body>
+</html>
